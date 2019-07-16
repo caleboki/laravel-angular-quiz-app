@@ -3,9 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ResultComponent } from './result/result.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: 'register', component:RegisterComponent },
+  { path: 'login', component:LoginComponent },
   { path: 'quiz', component:QuizComponent },
   { path: 'result', component:ResultComponent },
   { path: '', redirectTo:'/register', pathMatch: 'full' },
